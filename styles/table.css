@@ -1,0 +1,197 @@
+html, body {
+	margin: 0;
+	font-family: 'Oxygen';
+	color: #00ff00;
+}
+
+
+html a:link, body a:link {
+  text-decoration: none;
+}
+
+html a:visited, body a:visited {
+  text-decoration: none;
+}
+
+html a:hover, body a:hover {
+  text-decoration: underline;
+}
+
+html a:active, body a:active {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timetable {
+  display: grid;
+  grid-template-areas: "header header" "gap week" "time content" "footer footer";
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.timetable .gradient1 {
+	font-weight: bold;
+	font-size: 150%;
+	color: #00ff00;
+}
+
+.timetable .gradient2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #33adff, #0099ff);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+
+.timetable .gradient3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #ffcc00, #cca300);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+.timetable .gradient4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #ff80df, #ff33cc);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+.timetable .gradient5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #99ff66, #66ff1a);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+.timetable .gradient6 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #ff1a1a, #ffb3b3);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+.timetable .gradient7 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #aa80ff, #661aff);
+	color: #004d00;
+	transition: .2s ease box-shadow, .2s ease transform;
+}
+
+
+
+
+
+.timetable .gap {
+  grid-area: gap;
+  box-shadow: inset 0 1px 0 0 #ECEFF1;
+}
+
+.timetable .header {
+  grid-area: header;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.timetable .header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 1px 1px 1px #ECEFF1;
+}
+
+.timetable .weekdays {
+  grid-area: week;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.timetable .weekdays > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 1px 0 0 #ECEFF1;
+}
+
+.timetable .time-interval {
+  grid-area: time;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  font-size: 14px;
+}
+
+.timetable .time-interval > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 1px 0 0 #ECEFF1;
+}
+
+.timetable .content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.timetable .content > div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
+}
+
+.timetable .footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timetable .footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 1px 1px 1px #ECEFF1;
+}
